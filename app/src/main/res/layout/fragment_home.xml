@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:weightSum="7"
+    tools:context="com.kpf.sujeet.digitaleducation.Fragments.HomeFragment">
+
+
+    <RadioGroup
+        android:layout_marginTop="15dp"
+        android:id="@+id/radio_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <RadioButton
+            android:id="@+id/present_radio_btn"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:text="I'm Present"
+            android:paddingLeft="@dimen/checkbox_padding"/>
+        <RadioButton
+            android:id="@+id/absent_radio_btn"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:text="I'm not Present today"
+            android:paddingLeft="@dimen/checkbox_padding"/>
+
+        <ImageView
+            android:id="@+id/map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            android:visibility="invisible"
+            android:src="@android:drawable/ic_dialog_map"/>
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_margin="@dimen/custom_margin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:weightSum="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtvw_no_of_students"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:textColor="#123"
+            android:layout_height="wrap_content"
+            android:text="Number of Students presents"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="5dp"/>
+        <EditText
+            android:id="@+id/edt_student_no"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:gravity="center"
+            android:hint="00"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtvw_subjects_to_teach"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:textColor="#123"
+        android:text="Subjects To Teach :"
+        android:textSize="@dimen/text_size"
+        android:gravity="center"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:id="@+id/edt_subject1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Subject1"/>
+
+    <EditText
+        android:id="@+id/edt_subject2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Subject2"/>
+
+    <EditText
+        android:id="@+id/edt_subject3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subject3"/>
+
+    <Button
+        android:id="@+id/btn_home_submit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        android:text="Submit  Data"
+        android:layout_margin="5dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

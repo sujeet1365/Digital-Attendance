@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DigitalEducation</string>
+    <string name="Login_button_name">Login</string>
+    <string name="Signup_button_name">SignUp</string>
+    <string name="splash_screen_quote">Copyright &#169; Kedar Prasad Foundation </string>
+    <string name="title_activity_login">Sign Up</string>
+    <string name="authentication_failed">Wrong Credential</string>
+    <string name="facebook_app_id">814846475324659</string>
+
+    <string name="checkbox_text">Presently in School</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home">HomeActivity</string>
+</resources>
